@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/03a18e1a06.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <title>Pomodoro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+         <!------ everything goes inside container----->
+<div class= "container"> 
+
+         <!------ the whole menu thing to the left----->
+
+<div class=" menu">
+
+         <!------ the leaf icon----->
+    <i class="fas fa-leaf"></i>
+
+
+         <!------ options of menu; redio buttons----->
+<div class="options">
+
+         <!------ each and every radio button----->
+    <div class="change">
+       <input type="radio" id ="long" name ="change" value="long" checked> 
+       <label for="long"> 30 min</label>
+    </div>
+        
+         <!------ each and every radio button----->
+
+    <div class="change"> 
+        <input type="radio" id ="half" name ="change" value="half"> 
+       <label for="half"> 15 min</label>
+    </div>
+
+         <!------ each and every radio button----->
+
+    <div class="change">
+        <input type="radio" id ="short" name ="change" value="short"> 
+       <label for="short"> 5 min</label>
+    </div>
+
+        <!------ end of button div----->
+</div>
+        <!------ end of options div----->
+</div>
+        <!------ end of menu div----->
+
+
+        <!------ h1 timer numbers----->
+<h1 class="timer">  30:00 </h1>
+ 
+        <!------ buttons of timer----->
+<div class="buttons">
+    <button type="button" id ="start" class="btn">Start   </button>
+    <button type="button" id ="pause" class="btn"> Pause </button> 
+    <button type="button" id ="reset" class="btn"> Reset </button>
+</div>
+
+        <!------ footer----->
+<footer>
+    <p> copyright &copy; Samia | fait avec <i class="far fa-heart"></i> et <i class="fas fa-mug-hot"></i></p>
+</footer>
+
+        <!------ end of container div----->
+</div>
+
+<script src="main.js"></script>   
+</body>
+</html>
