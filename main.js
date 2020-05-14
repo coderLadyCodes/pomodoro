@@ -10,7 +10,7 @@ $(document).ready(function(){
    });
 
 
-// Set up the timer now !!!
+// Set up the timer now !!!  
 const buttons = document.querySelectorAll('.btn');
 const timer = document.querySelector('.timer');
 const timerOptions = document.querySelectorAll('.change');
@@ -32,9 +32,9 @@ const alarmSound = new Audio('sparrow.mp3');
 
 function chooseAction() {
          resetAudio();
-
+         
     const whichBtn = this.textContent;
-
+    
     switch (whichBtn) {
         case 'Start':
             if (paused) {
@@ -53,7 +53,7 @@ function chooseAction() {
         case 'Reset':
             reset();
             break;    
-    }
+    } 
 }
 
 
@@ -78,7 +78,7 @@ function reset() {
     paused = true;
 
     setMin(timeToUse);
-    updateDisplayTimer();
+    //updateDisplayTimer();
 }
 
 function setMin(time) {
@@ -102,11 +102,11 @@ function timerCountdown() {
         alarmSound.play();
         timerEnded = true;
     } 
-    else if ( seconds < 1) {
+    else if ( seconds < 0) {
         min--;
         seconds = 59;
     }
-    updateDisplayTimer();
+    updateDisplayTimer(); 
 }
 
 
@@ -134,6 +134,7 @@ function selectTimeToUse(e) {
 
     paused = true;
     setMin(timeToUse);
+    
 }
 
 
