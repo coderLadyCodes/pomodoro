@@ -37,13 +37,7 @@ function chooseAction() {
     
     switch (whichBtn) {
         case 'Start':
-            if (paused) {
-				toggleStop();
-			} else {
-				
-                startTimer();
-            }
-
+             startTimer();
             break;
         
         case 'Pause':
